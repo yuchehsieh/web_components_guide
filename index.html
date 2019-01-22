@@ -9,15 +9,18 @@
       div {
         border: 2px solid orange;
       }
+      .highlight {
+        background-color: #f7d28e;
+      }
     </style>
     <script src="tooltip.js"></script>
     <script src="confirm-link.js"></script>
   </head>
   <body>
     <p>
-      <mh-tooltip text="Web Components is a set of standards"
-        >Web Components</mh-tooltip
-      >
+      <mh-tooltip text="Web Components is a set of standards">
+        <span class="highlight">Web Components</span>
+      </mh-tooltip>
       are awesome!
     </p>
     <mh-tooltip></mh-tooltip>
