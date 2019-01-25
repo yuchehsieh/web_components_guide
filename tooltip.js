@@ -15,7 +15,7 @@ class Tooltip extends HTMLElement {
             }
 
             :host(.important) {
-              background: lightgrey
+              background: var(--color-primary, #ccc)
             }
 
             :host-context(p) {
