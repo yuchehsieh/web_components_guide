@@ -63,6 +63,14 @@ class Tooltip extends HTMLElement {
     this.shadowRoot.appendChild(this._tooltipContainer);
   }
 
+  attributeChangedCallback(name, oldValue, newValue) {
+    console.log(name, oldValue, newValue);
+  }
+
+  static get observedAttributes() {
+    return ['text'];
+  }
+
   _hideTooltip() {
     this.shadowRoot.removeChild(this._tooltipContainer);
   }
