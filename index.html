@@ -28,6 +28,16 @@
       const confirmButton = document.querySelector('button');
       const modal = document.querySelector('mh-modal');
 
+      modal.addEventListener('confirm', () => {
+        // confirm is not a built-in event
+        console.log('Confirmed ...');
+      });
+
+      modal.addEventListener('cancel', () => {
+        // cancel is not a built-in event
+        console.log('Cancel ...');
+      });
+
       confirmButton.addEventListener('click', () => {
         // modal.setAttribute('opened', '');
         if (!modal.isOpen) {
