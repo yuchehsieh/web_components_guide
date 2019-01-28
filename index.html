@@ -23,5 +23,13 @@
     </mh-modal>
     <p>Please confirm your choice</p>
     <button>Show Detail & confirm</button>
+    <script>
+      const confirmButton = document.querySelector('button');
+      const modal = document.querySelector('mh-modal');
+
+      confirmButton.addEventListener('click', () => {
+        modal.setAttribute('opened', '');
+      });
+    </script>
   </body>
 </html>
